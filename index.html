@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFinances</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="quadrado" id="tema">
+        <button id="btn-tema">Modo Escuro</button>
+    </div>
+
+    <header>
+        <h1>Controle de Finanças</h1>
+    </header>
+
+    <!-- local de colocar as informações -->
+    <div class="quadrado" id="formulario">
+    
+        <h2>Cadastro de Transações</h2>
+        <form id="form-cadastro">
+            <input type="text" id="nome" placeholder="Nome/Descrição" required> <br><br>
+            <select id="categoria" required>
+                <option value="receita">Receita</option>
+                <option value="despesa">Despesa</option>
+            </select>
+            <input type="date" id="data" required> <br><br>
+            <input type="number" id="valor" placeholder="Valor" required><br><br>
+            <button type="submit">Cadastrar</button>
+
+       
+        </form>
+   
+    </div>
+
+    <!-- mostrando as informações colocadas -->
+    
+    <div class="quadrado" id="transacoes">
+        <h2>Transações Cadastradas</h2>
+        <table id="tabela-transacoes">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Data</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- mostrando as informações financeiras no geral -->
+    <div class="quadrado" id="resumo">
+        <h2>Resumo Financeiro</h2>
+        <p>Total de Receitas: <span id="total-receitas">R$ 0,00</span></p>
+        <p>Total de Despesas: <span id="total-despesas">R$ 0,00</span></p>
+        <p>Saldo Final: <span id="saldo-final">R$ 0,00</span></p>
+    </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

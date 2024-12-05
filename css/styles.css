@@ -1,0 +1,83 @@
+
+/* Estilos para o modo claro (padrão) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+ /*identando o geral das divs*/
+.quadrado {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border: black;
+}
+
+/* Estilo específico das Dvis para quando tá no modo claro */
+.formulario,
+.transacoes,
+.resumo,
+.filtros,
+.tema {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilo da das Divs no modo escuro */
+body.escuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.escuro .quadrado {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.escuro header, body.escuro h1 {
+    color: #e0e0e0;
+}
+
+body.escuro button {
+    background-color: #555;
+    color: white;
+}
+
+body.escuro button:hover {
+    background-color: #666;
+}
+
+body.escuro table th, body.escuro table td {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+body.escuro input, body.escuro select {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.escuro input:focus, body.escuro select:focus {
+    border-color: #888;
+}
+
+/*o botão do modo escuro */
+body.escuro #btn-tema {
+    background-color: #333;
+    color: white;
+}
+
+body.escuro #btn-tema:hover {
+    background-color: #555;
+}
